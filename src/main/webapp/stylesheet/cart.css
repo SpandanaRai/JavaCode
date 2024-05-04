@@ -1,0 +1,45 @@
+@charset "UTF-8";
+ body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+}
+ #cartpage{
+     width: 60%;
+     height: 600px;
+     background-color: rgb(168, 222, 184);
+     border:1.5px solid black ;
+}
+ .cartnav{
+     width: 100%;
+     height: 60px;
+     text-align: center;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ .cart{
+     width: 100%;
+     height: 120px;
+     margin-top: 400px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background-color: rgb(135, 182, 149);
+}
+ .cart p {
+     margin: 0;
+     padding: 40px;
+     font-size: 40px;
+     color: red;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ .cart #checkoutbutton {
+     margin-right: 25px;
+     height: 60px;
+     width: 200px;
+     font-size: 26px;
+     cursor: pointer;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ 

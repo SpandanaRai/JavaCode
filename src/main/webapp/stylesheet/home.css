@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+}
+
+
+#home{
+    width: 100%;
+    height: 1700px;
+
+}
+
+.homeheader{
+    width: 100%;
+    height: 80px;
+    
+}
+
+.homefooter{
+	width: 100%;
+    height: 180px;
+    background-color: rgb(86, 138, 121);
+	margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.para{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 150px;
+	text-align: center;
+	font-style: italic;
+	font-size: 30px;
+	background-color: rgb(210, 227, 251);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.image{
+    width: 100%;
+    height: 400px;
+    background-color: azure;
+}
+
+.image>img{
+    width: 100%;
+    height: 400px;
+}
+
+.recc{
+    width: 100%;
+    height: 450px;
+    border-bottom: 1.5px solid black;
+}
+
+.recc>h2{
+	margin-top: 10px;
+    text-align: center;
+    color: red;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.top{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.three{
+	margin-top: 40px;
+	width: 220px;
+    height: 330px;
+    border: 1px solid black;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topimage{
+	margin-top: 10px;
+	margin-left: 5px;
+    width: 170px;
+    height: 170px;
+    cursor: pointer;
+    background-color: lightgray;
+    box-shadow: 10px 20px rgb(120, 115, 115);
+    border: 1px solid gray;
+}
+
+.productname{
+	text-align: center;
+	margin-top: 30px;
+	font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+
+
+.cartbutton{
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: darkblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.productprice{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: darkred;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.new{
+    width: 100%;
+    height: 450px;
+}
+
+.new>h3{
+   margin-top: 30px;
+   text-align: center;
+   color: red;
+   font-size: 30px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bottom{
+   width: 100%;
+   height: 300px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.newly{
+   margin-top: 40px;
+   width: 220px;
+   height: 330px;
+   border: 1px solid black;
+   margin-left: 100px;
+   margin-right: 100px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.bottomimage{
+   margin-top: 10px;
+   margin-left: 20px;
+   width: 170px;
+   height: 170px;
+   cursor: pointer;
+   background-color: lightgray;
+   box-shadow: 10px 20px rgb(120, 115, 115);
+   border: 1px solid gray;
+}
+
+.productbutton{
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: darkgreen;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.recc, .new {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productbutton{
+    margin-top: 45px;
+}

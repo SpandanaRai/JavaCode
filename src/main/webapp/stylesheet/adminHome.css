@@ -1,0 +1,15 @@
+@charset "UTF-8";
+  .box-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 350px;
+    padding-top: 50px;
+  }
+  
+  .box-container img {
+	margin-right: 50px; /* Adjust the margin value if needed */
+	margin-left: 50px;
+	margin-top: 40px;
+	width: 250px;
+  }        

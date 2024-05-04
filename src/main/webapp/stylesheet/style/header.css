@@ -1,0 +1,52 @@
+@charset "UTF-8";
+.header {
+	background-color: #fff;
+	border-bottom: 1px solid #f3f3f4;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	
+	height: 60px;
+}
+.header .header-left {
+	float: left;
+    height: 60px;
+    position: relative;
+    width: 320px;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+    
+    border-bottom: 1px solid #efefef;
+	border-right: 1px solid #ececf5;
+    display: flex;
+    align-items: center;	
+}
+
+.header .header-left .logo {
+	display: inline-block;
+	line-height: 60px;
+}
+.header .header-left .logo img {
+    max-height: 50px;
+    width: 290px;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.mobile_btn {
+	display: none;
+	float: left;
+}
+
+
+.top-nav-search {
+    display: flex;
+    margin-left: 15px;
+}
+
+.fa-solid.fa-user{
+    margin-left: 900px;
+    margin-top: 25px;
+}
+
