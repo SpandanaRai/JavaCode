@@ -26,8 +26,11 @@
 		<div class="flex items-center justify-center flex-grow" >
 			<form action="${pageContext.request.contextPath}/ProductServlet"
 				method="get">
-				<input type="search" name="name" class="p-2 border border-black border-2 rounded-xl bg-transparent w-[500px]" >
-				<i class="fa-solid fa-magnifying-glass"></i>
+				<div style="display: flex; justify-content: space-between; width: 100%;">
+				<input type="search" name="name" class="p-2 border border-black border-2 rounded-xl bg-transparent w-[550px]" >
+				<i class="fa-solid fa-magnifying-glass" style="margin-left:20px;"></i>
+				</div>
+				
 			</form>
 		</div>
 		<div class="text-xl font-bold *:p-2 ">

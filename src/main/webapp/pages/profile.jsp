@@ -29,7 +29,10 @@
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required>
                 <br><br>
+                <div style="display: flex; justify-content: space-between; width: 100%;">
+                <a href="${pageContext.request.contextPath}/pages/updateProfile.jsp" class="submit-link">View orders</a>
                 <a href="${pageContext.request.contextPath}/pages/updateProfile.jsp" class="submit-link">Edit Details</a>
+                </div>
             </form>
         </div>
     </div>
