@@ -261,7 +261,7 @@ public class DatabaseController {
 
   	public int addProduct(ProductModel product) {
   		try (Connection con = getConnection();
-  				PreparedStatement st = con.prepareStatement(StringUtils.INSERT_PRODUCT)) {
+  			PreparedStatement st = con.prepareStatement(StringUtils.INSERT_PRODUCT)) {
   			st.setString(1, product.getName());
   			st.setString(2, product.getDescription());
   			st.setInt(3, product.getStock());
@@ -276,7 +276,52 @@ public class DatabaseController {
   		}
   	}
   	
-
+  	public int saveFeedback(String email, String message, String number) {
+		int result = -1;
+		try(Connection con = getConnection()) {
+			PreparedStatement st = con.prepareStatement(StringUtils.INSERT_FEEDBACK);
+			st.setString(1, email);
+			st.setString(2, message);
+			st.setString(3, number);
+			
+			st.executeUpdate();
+			result = 0;
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		return result;
+	}
+  	public UserModel getUserByEmail(String email) {
+		UserModel user = null;
+		try(Connection con = getConnection()) {
+			String query = "SELECT * FROM users where email = ?";
+			PreparedStatement st = con.prepareStatement(query);
+			st.setString(1, email);
+			ResultSet rs = st.executeQuery();
+			if(rs.next()) {
+				user = new UserModel();
+				user.setUsername(rs.getString("username"));
+				user.setEmail(rs.getString("email"));
+				user.setAddress(rs.getString("address"));
+				user.setPhoneNumber(rs.getString("contact"));
+				user.setPassword(rs.getString("password"));
+                user.setIsAdmin(rs.getString("isadmin"));
+                user.setName(rs.getString("name"));
+			}
+			
+			return user;
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		
+		
+		return user;
+	}
 //  	public int addCategory(CategoryModel category) {
 //  	    try (Connection con = getConnection();
 //  	         PreparedStatement st = con.prepareStatement(StringUtils.INSERT_CATEGORY)) {

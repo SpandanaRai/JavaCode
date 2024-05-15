@@ -14,7 +14,9 @@
 
 </head>
 <body>
+<%@ include file="./partials/header.jsp"%>
 	<div class="wrapper">
+	
 		<span class="icon-close"><ion-icon name="close"></ion-icon>
 		</span>
 		<div class="form-box register">

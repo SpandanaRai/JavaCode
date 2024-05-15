@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@page import="model.AboutUsModel"%>
+<%@page import="util.StringUtils"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,6 +14,27 @@
         <div class="container1"><br>
             <div class="heading"> 
                 <h1 style="font-weight:bold; font-size:26px;">About Us</h1>
+                <form action="${pageContext.request.contextPath}/AboutUsServlet" method="post">
+                <% 
+			        String successMessage = (String) request.getAttribute(StringUtils.FEEDBACK_SUCCESS_MESSAGE);
+			        String errorMessage = (String) request.getAttribute(StringUtils.FEEDBACK_ERROR_MESSAGE);
+			
+			        if (errorMessage != null && !errorMessage.isEmpty()) {
+			        %>
+			        <!-- Display error message -->
+			         <div class="alert alert-danger mt-2" role="alert">
+			            <%= errorMessage %>
+			        </div>
+			        <% } %>
+			
+			        <% 
+			        if (successMessage != null && !successMessage.isEmpty()) {
+			        %>
+			        <!-- Display success message -->
+			        <div class="alert alert-success mt-2" role="alert">
+			            <%= successMessage %>
+			        </div>
+			      <% } %>
                 <br />
                 <br />
                 <p>
@@ -68,9 +91,6 @@
                 </div>
                 <div class="box4">
                     <h3>Send ur message to us</h3>
-                    <br />
-                    <input type="name" placeholder="Enter your Name" style="height: 30px; border-radius: 5px;" />
-                    <br />
                     <br />
                     <input type="number" placeholder="Your Phone Number" style="height: 30px; border-radius: 5px;" />
                     <br />

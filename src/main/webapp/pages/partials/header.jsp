@@ -40,6 +40,8 @@
 			%>
 			<a class="text-blue-500" href="${pageContext.request.contextPath}/pages/cart.jsp">&#128722;<sup
 				class="text-xl">0</sup></a> 
+			<a
+				href="${pageContext.request.contextPath}/pages/aboutUs">About Us</a>
 			<a href="${pageContext.request.contextPath}/pages/profile.jsp">&#128100; </a>
 			<a
 				href="${pageContext.request.contextPath}/Logout">Logout</a>
